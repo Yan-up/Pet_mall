@@ -1,0 +1,85 @@
+/* 通用样式 */
+& h3 {
+    font-size: 20px;
+    color: #666;
+    font-weight: normal;
+    cursor: default;
+    margin-bottom: 20px;
+}
+
+& .see-more {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 16px;
+    color: #666;
+
+    & a {
+        width: 90px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        border: 1px solid var(--m);
+        border-radius: 10rem;
+        color: var(--m);
+    }
+
+    &:hover a {
+        color: #fff;
+        background-color: var(--m);
+    }
+
+    &:hover p {
+        color: var(--m);
+    }
+}
+
+main {
+    & .news-center-details {
+        width: 1180px;
+        margin: 110px 0;
+
+        & .brand-report {
+            cursor: default;
+
+            & .first-line {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            & .second-line {
+                display: flex;
+                justify-content: space-between;
+                margin: 60px 0 50px;
+            }
+
+            & .product-introduction-pagination {
+                margin: 0 auto;
+            }
+        }
+
+        & .other-reports {
+            display: flex;
+            flex-flow: column nowrap;
+            margin-top: 100px;
+
+            & .on {
+                color: var(--m);
+                text-decoration: underline;
+            }
+
+            & a {
+                display: inline-block;
+                font-size: 16px;
+                color: #666;
+                margin-bottom: 5px;
+
+                &:hover {
+                    color: var(--m);
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
